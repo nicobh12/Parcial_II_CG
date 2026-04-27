@@ -1,0 +1,41 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Graficador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Graficador de Coordenadas</h1>
+
+    <p class="descripcion">
+        Ingresa cuántos puntos deseas y luego escribe sus coordenadas.
+        <br>Solo números enteros positivos.
+    </p>
+
+    <div class="card">
+
+        <div class="input-group">
+            <label for="numPuntos">Cantidad de puntos</label>
+            <input type="number" id="numPuntos" min="2" value="3">
+        </div>
+
+        <button class="btn" onclick="crearCampos()">Generar coordenadas</button>
+
+        <!-- AQUÍ SE GENERAN LOS CAMPOS -->
+        <form id="formCoordenadas" class="tabla-coordenadas"></form>
+
+        <button class="btn graficar" onclick="graficar()">Graficar</button>
+
+    </div>
+
+    <canvas id="graficador" width="600" height="400"></canvas>
+
+</div>
+
+<script src="graficador.js"></script>
+</body>
+</html>

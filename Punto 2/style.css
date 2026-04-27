@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 700px;
+}
+
+h1 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* TARJETA */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* INPUT INICIAL */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 80px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* BOTONES */
+.btn {
+    background: #F8C8DC;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #f4a6c1;
+    transform: scale(1.05);
+}
+
+.graficar {
+    background: #CDE7F0;
+}
+
+.graficar:hover {
+    background: #a9d4e5;
+}
+
+/* TABLA DE COORDENADAS */
+.tabla-coordenadas {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* FILAS */
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    align-items: center;
+    gap: 10px;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.fila:hover {
+    background: #f0f7fa;
+}
+
+/* ENCABEZADO */
+.header {
+    font-weight: bold;
+    background: transparent;
+    color: #666;
+}
+
+/* INPUTS EN TABLA */
+.fila input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* CANVAS */
+canvas {
+    margin-top: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
